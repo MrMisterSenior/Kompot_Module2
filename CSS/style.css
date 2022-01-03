@@ -1,0 +1,199 @@
+/*#region Шрифт Cera Pro*/
+@font-face {
+    font-family: Cera Pro;
+    src: url('fonts/Cera-Pro/CeraPro-Thin.ttf');
+    font-weight: 300;
+}
+@font-face {
+    font-family: Cera Pro;
+    src: url('fonts/Cera-Pro/CeraPro-Light.ttf');
+    font-weight: 400;
+}
+@font-face {
+    font-family: Cera Pro;
+    src: url('fonts/Cera-Pro/CeraPro-Regular.ttf');
+    font-weight: 500;
+}
+/*#endregion Шрифт Cera Pro*/
+html, body
+{
+    font-family: Cera Pro;
+    height: 100%;
+    margin: 0px;
+}
+/*#region Шапка*/
+header
+{
+    background-color: #E0E0DD;
+    position: fixed;
+    top: 0px;
+    height: 129px;
+    width: 100%;
+}
+header a, span
+{
+    color: #FFFFFF;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 15px;
+}
+/*#region Верхняя половина*/
+.header-top
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 61px;
+    padding-right: 59px;
+    background-color: #333333;
+    height: 48px;
+}
+.header-top-buttons-container
+{
+    display: flex;
+    gap: 58px;
+}
+.header-top-info-container
+{
+    display: flex;
+    gap: 54px;
+}
+.header-top-phone
+{
+    font-size: 20px;
+    font-weight: 500;
+}
+/*#endregion Верхняя половина*/
+
+/*#region Нижняя половина*/
+.header-bottom
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 56px;
+    padding-right: 60px;
+    background-color: #FFFFFF;
+    height: 80px;
+}
+.header-bottom-menu-logo
+{
+    display: flex;
+    align-items: center;
+    gap: 24.72px;
+}
+.header-bottom-left
+{
+    display: flex;
+    align-items: center;
+    gap: 71px;
+}
+.header-bottom-left a
+{
+    display: flex;
+    align-items: center;
+    gap: 11px;
+    height: 29px;
+}
+.header-bottom-left a span
+{
+    color: #333333;
+    font-weight: 400;
+    font-size: 18px;
+}
+.header-bottom-right
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 27.56px;
+}
+/*#endregion Нижняя половина*/
+
+/*#endregion Шапка*/
+
+/*#region Main*/
+main
+{
+    height: 100%;
+}
+/*#endregion Main*/
+
+/*#region Подвал*/
+footer
+{
+    height: 560px;
+    background-color: #333333;
+}
+/*#region Верх*/
+.footer-top
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 139px;
+    padding-right: 142px;
+    border-bottom: 1px solid;
+    border-bottom-color: #535353;
+    height: 90px;
+}
+.footer-top-buttons-container
+{
+    display: flex;
+    gap: 81px;
+}
+.footer-top-buttons-container a
+{
+    color: #BDBDBD;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 30px;
+}
+.footer-top-phone
+{
+    font-size: 24px;
+    font-weight: 500;
+}
+/*#endregion Верх*/
+
+/*#region Середина*/
+.footer-middle
+{
+    
+}
+/*#endregion Середина*/
+
+/*#region Низ*/
+.footer-bottom
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 139px;
+    padding-right: 142px;
+}
+.footer-bottom span
+{
+    color: #9C9C9C;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+.social-media-button
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 48px;
+    width: 48px;
+    border: 1px solid #9C9C9C;
+    border-radius: 50%;
+}
+.footer-bottom-social-media-buttons-container
+{
+    display: flex;
+    gap: 20px;
+}
+/*#endregion Низ*/
+
+/*#endregion Подвал*/
