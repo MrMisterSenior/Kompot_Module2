@@ -24,11 +24,11 @@ html, body
 /*#region Шапка*/
 header
 {
-    background-color: #E0E0DD;
     position: fixed;
     top: 0px;
-    height: 129px;
+    height: 128px;
     width: 100%;
+    border-bottom: 1px solid #E0E0DD;
 }
 header a, span
 {
@@ -40,26 +40,35 @@ header a, span
 /*#region Верхняя половина*/
 .header-top
 {
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-left: 61px;
-    padding-right: 59px;
+    padding-left: 60px;
+    padding-right: 60px;
     background-color: #333333;
     height: 48px;
 }
-.header-top-buttons-container
+.header-top .container
 {
     display: flex;
-    gap: 58px;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 60px;
+}
+.header-top-buttons-container a
+{
+    margin-right: 58px;
 }
 .header-top-info-container
 {
     display: flex;
-    gap: 54px;
+    align-items: center;
 }
 .header-top-phone
 {
+    margin-left: 54px;
     font-size: 20px;
     font-weight: 500;
 }
@@ -80,23 +89,27 @@ header a, span
 {
     display: flex;
     align-items: center;
-    gap: 24.72px;
+    margin-right: 70px;
+}
+#menu-button
+{
+    margin-right: 25px;
 }
 .header-bottom-left
 {
     display: flex;
     align-items: center;
-    gap: 71px;
 }
 .header-bottom-left a
 {
     display: flex;
     align-items: center;
-    gap: 11px;
-    height: 29px;
+    height: 30px;
+    margin-right: 70px;
 }
 .header-bottom-left a span
 {
+    margin-right: 11px;
     color: #333333;
     font-weight: 400;
     font-size: 18px;
@@ -106,7 +119,10 @@ header a, span
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 27.56px;
+}
+.header-bottom-right a
+{
+    margin-left: 28px;
 }
 /*#endregion Нижняя половина*/
 
@@ -131,8 +147,7 @@ footer
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-left: 139px;
-    padding-right: 142px;
+    padding: 0 140px;
     border-bottom: 1px solid;
     border-bottom-color: #535353;
     height: 90px;
@@ -140,10 +155,10 @@ footer
 .footer-top-buttons-container
 {
     display: flex;
-    gap: 81px;
 }
 .footer-top-buttons-container a
 {
+    margin-right: 80px;
     color: #BDBDBD;
     text-decoration: none;
     font-weight: 400;
@@ -161,6 +176,7 @@ footer
 .footer-middle
 {
     background-color: green;
+    height: 260px;
 }
 /*#endregion Середина*/
 
@@ -172,6 +188,7 @@ footer
     justify-content: space-between;
     padding-left: 139px;
     padding-right: 142px;
+    height: 209px;
 }
 .footer-bottom span
 {
@@ -192,7 +209,10 @@ footer
 .footer-bottom-social-media-buttons-container
 {
     display: flex;
-    gap: 20px;
+}
+.footer-bottom-social-media-buttons-container a
+{
+    margin-right: 20px;
 }
 /*#endregion Низ*/
 
