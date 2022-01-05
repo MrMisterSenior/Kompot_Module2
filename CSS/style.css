@@ -28,6 +28,7 @@ main
 /*#region Шапка*/
 header
 {
+    z-index: 1;
     position: fixed;
     top: 0px;
     height: 128px;
