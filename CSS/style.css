@@ -21,6 +21,10 @@ html, body
     height: 100%;
     margin: 0px;
 }
+main
+{
+    padding: 150px 60px 560px 60px;
+}
 /*#region Шапка*/
 header
 {
@@ -133,6 +137,52 @@ main
 {
     height: 100%;
 }
+.banners-container
+{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+.banner
+{
+    position: relative;
+    width: 32.6%;
+}
+.banner-img
+{
+    max-width: 100%;
+    height: auto;
+    width: auto\9;
+}
+.banner-text-container
+{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    padding-left: 5%;
+    padding-bottom: 7%;
+}
+.banner-text-line-1
+{
+    font-weight: 500;
+    font-size: 20px;
+}
+.banner-text-line-2
+{
+    font-weight: 500;
+    font-size: 35px;
+}
+.banner-text-line-2
+{
+    font-weight: 500;
+    font-size: 34px;
+}
+/*#region 3 крупных баннера*/
+
+/*#endregion 3 крупных баннера*/
+
 /*#endregion Main*/
 
 /*#region Подвал*/
