@@ -2,16 +2,21 @@
 @font-face {
     font-family: Cera Pro;
     src: url('fonts/Cera-Pro/CeraPro-Thin.ttf');
-    font-weight: 300;
+    font-weight: 200;
 }
 @font-face {
     font-family: Cera Pro;
     src: url('fonts/Cera-Pro/CeraPro-Light.ttf');
-    font-weight: 400;
+    font-weight: 300;
 }
 @font-face {
     font-family: Cera Pro;
     src: url('fonts/Cera-Pro/CeraPro-Regular.ttf');
+    font-weight: 400;
+}
+@font-face {
+    font-family: Cera Pro;
+    src: url('fonts/Cera-Pro/CeraPro-Medium.ttf');
     font-weight: 500;
 }
 /*#endregion Шрифт Cera Pro*/
@@ -20,10 +25,6 @@ html, body
     font-family: Cera Pro;
     height: 100%;
     margin: 0px;
-}
-main
-{
-    padding: 140px 60px 560px 60px;
 }
 /*#region Шапка*/
 header
@@ -49,8 +50,7 @@ header a, span
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-left: 60px;
-    padding-right: 60px;
+    padding: 0px 3.13%;
     background-color: #333333;
     height: 48px;
 }
@@ -60,11 +60,14 @@ header a, span
     align-items: center;
     justify-content: space-between;
     width: 100%;
-    padding: 0 60px;
 }
 .header-top-buttons-container a
 {
     margin-right: 58px;
+}
+.header-top-buttons-container a:last-child
+{
+    margin-right: 0px;
 }
 .header-top-info-container
 {
@@ -85,7 +88,7 @@ header a, span
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-left: 56px;
+    padding-left: 60px;
     padding-right: 60px;
     background-color: #FFFFFF;
     height: 80px;
@@ -112,6 +115,10 @@ header a, span
     height: 30px;
     margin-right: 70px;
 }
+.header-bottom-left a:last-child
+{
+    margin-right: 0px;
+}
 .header-bottom-left a span
 {
     margin-right: 11px;
@@ -129,6 +136,10 @@ header a, span
 {
     margin-left: 28px;
 }
+.header-bottom-right a:first-child
+{
+    margin-left: 0px;
+}
 /*#endregion Нижняя половина*/
 
 /*#endregion Шапка*/
@@ -137,6 +148,7 @@ header a, span
 main
 {
     height: 100%;
+    padding: 140px 3.13% 560px 3.13%;
 }
 
 /*#region Большие баннеры сверху*/
@@ -200,6 +212,7 @@ main
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding: 60px 0;
 }
 .section-top-line span
 {
@@ -211,7 +224,6 @@ main
 {
     display: flex;
     align-items: center;
-    justify-content: space-between;
 }
 .category-selector
 {
@@ -225,7 +237,27 @@ main
     text-decoration: none;
     color: #333333;
     font-size: 18px;
-    margin-left: 20px;
+    font-weight: 400;
+    margin-right: 20px;
+}
+.category-selector:last-child
+{
+    margin-right: 0px;
+}
+.category-selector-active
+{
+    display: flex;
+    width: 120px;
+    height: 40px;
+    border: 1px solid #188145;
+    border-radius: 100px;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: #333333;
+    font-size: 18px;
+    font-weight: 400;
+    margin-right: 20px;
 }
 .buttons-left-right-container
 {
@@ -256,6 +288,10 @@ main
     transform: rotate(180deg);
 }
 /*#endregion Заголовок раздела*/
+
+/*#region 5 товаров*/
+
+/*#endregion 5 товаров*/
 
 /*#endregion Main*/
 
