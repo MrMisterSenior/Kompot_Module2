@@ -23,7 +23,7 @@ html, body
 }
 main
 {
-    padding: 150px 60px 560px 60px;
+    padding: 140px 60px 560px 60px;
 }
 /*#region Шапка*/
 header
@@ -138,6 +138,8 @@ main
 {
     height: 100%;
 }
+
+/*#region Большие баннеры сверху*/
 .banners-container
 {
     display: flex;
@@ -165,6 +167,16 @@ main
     padding-left: 5%;
     padding-bottom: 7%;
 }
+.banner-gradient
+{
+    height: 290px;
+    position: absolute;
+    bottom: 5px;
+    width: 100%;
+    background: linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0) 100%);
+    opacity: 0.6;
+    transform: rotate(-180deg);
+}
 .banner-text-line-1
 {
     font-weight: 500;
@@ -180,9 +192,70 @@ main
     font-weight: 500;
     font-size: 34px;
 }
-/*#region 3 крупных баннера*/
+/*#endregion Большие баннеры сверху*/
 
-/*#endregion 3 крупных баннера*/
+/*#region Заголовок раздела*/
+.section-top-line
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.section-top-line span
+{
+    font-weight: 500;
+    font-size: 28px;
+    color: #333333;
+}
+.category-selection-container
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.category-selector
+{
+    display: flex;
+    width: 120px;
+    height: 40px;
+    border: 1px solid #E0E0DD;
+    border-radius: 100px;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: #333333;
+    font-size: 18px;
+    margin-left: 20px;
+}
+.buttons-left-right-container
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.button-left
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    background-color: #616161;
+    border-radius: 4px;
+}
+.button-right
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    background-color: #616161;
+    border-radius: 4px;
+    margin-left: 30px;
+    transform: rotate(180deg);
+}
+/*#endregion Заголовок раздела*/
 
 /*#endregion Main*/
 
