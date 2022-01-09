@@ -194,9 +194,8 @@ main
     position: absolute;
     bottom: 5px;
     width: 100%;
-    background: linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0) 100%);
+    background: linear-gradient(0deg, #000000 0%, rgba(0, 0, 0, 0) 100%);
     opacity: 0.6;
-    transform: rotate(-180deg);
 }
 .banner-text-line-1
 {
@@ -208,7 +207,7 @@ main
     font-weight: 500;
     font-size: 35px;
 }
-.banner-text-line-2
+.banner-text-line-3
 {
     font-weight: 500;
     font-size: 34px;
@@ -562,32 +561,102 @@ main
 {
     display: flex;
     align-items: center;
+    justify-content: space-between;
     height: 520px;
     width: 100%;
     background-color: #EAF8F0;
     margin-top: 120px;
-    padding-left: 70px;
+    padding: 70px 80px;
     box-sizing: border-box;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
 }
-.boasts-container
+.santa-text-container
+{
+    display: flex;
+}
+.santa-container
 {
     display: flex;
     flex-direction: column;
+    margin-right: 50px;
+}
+.banner-boast-text-container
+{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: space-between;
+    height: 400px;
+    width: 500px;
 }
 .banner-boast-text-container b
 {
     font-weight: 500;
     font-size: 20px;
     color: #333333;
-    text-align: center;
 }
 .banner-boast-text-container span
 {
     font-weight: 400;
     font-size: 16px;
     color: #333333;
+    width: 470px;
+}
+.arrow-right-round
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #FFFFFF;
+}
+.boasts-container
+{
+    display: flex;
+    flex-direction: column;
+}
+.boasts-row
+{
+    display: flex;
+    margin-top: 70px;
+}
+.boasts-row:first-child
+{
+    margin-top: 0px;
+}
+.boast
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.boast-img
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background-color: #FFFFFF;
+    border: 20px solid #FFFFFF;
+    border-radius: 50%;
+}
+.boast span
+{
+    width: 210px;
+    text-align: center;
+    font-weight: 400;
+    font-size: 18px;
+    color: #333333;
+    margin-top: 20px;
+}
+.boast .note
+{
+    font-size: 12px;
+    margin-top: 15px;
 }
 /*#endregion Баннер с Сантой и инфой о компании*/
 
