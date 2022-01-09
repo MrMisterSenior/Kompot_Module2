@@ -19,6 +19,11 @@
     src: url('fonts/Cera-Pro/CeraPro-Medium.ttf');
     font-weight: 500;
 }
+@font-face {
+    font-family: Cera Pro;
+    src: url('fonts/Cera-Pro/CeraPro-Bold.ttf');
+    font-weight: 700;
+}
 /*#endregion Шрифт Cera Pro*/
 body
 {
@@ -284,10 +289,12 @@ main
 .products-container
 {
     display: flex;
+    flex: none;
     overflow: hidden;
 }
 .product-card
 {
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -343,6 +350,17 @@ main
     vertical-align: middle;
     margin-left: 8px;
 }
+.compare
+{
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    border: 1px solid #E0E0DD;
+}
+.img-compare
+{
+    transform: scale(0.7);
+}
 /*#endregion Теги сверху*/
 
 /*#region Контейнер в центре (фото, название, артикул, отзывы)*/
@@ -352,11 +370,17 @@ main
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
+    margin-bottom: 44px;
+}
+.product-photo
+{
+    height: 215px;
 }
 .product-card-name
 {
     font-weight: 500;
     font-size: 16px;
+    max-width: 230px;
     color: #333333;
     text-align: center;
 }
@@ -397,18 +421,13 @@ main
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-top: 44px;
     margin-bottom: 20px;
 }
 .height
 {
     display: flex;
     align-items: center;
-    padding: 5px;
-    box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    width: 80px;
+    padding: 0 5px;
     height: 26px;
     background-color: #616161;
     font-weight: 500;
@@ -419,19 +438,16 @@ main
 {
     display: flex;
     align-items: center;
-    padding: 5px;
-    box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    width: 80px;
+    padding: 0 5px;
     height: 26px;
-    background-color: black;
     font-weight: 500;
     font-size: 14px;
-    color: #188145;
-    border-radius: 6px;
     border: 1px solid #188145;
+    box-sizing: border-box;
+    border-radius: 6px;
 }
+.diameter span { color: #188145; }
+.height span::after, .diameter span::after { content: " см";}
 .img-height
 {
     margin-right: 4px;
@@ -490,6 +506,71 @@ main
 /*#endregion 2 строчки снизу*/
 
 /*#endregion Полоса товаров*/
+
+/*#region Красный баннер*/
+.banner-collection-2021
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 200px;
+    background-image: url("/img/banner-collection-2021-background.png");
+}
+.banner-collection-2021 b
+{
+    color: #FADD9F;
+    font-weight: 700;
+    font-size: 52px;
+}
+.banner-collection-2021 span
+{
+    color: #FADD9F;
+    font-weight: 400;
+    font-size: 20px;
+}
+/*#endregion Красный баннер*/
+
+.special-offers-banners-container
+{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 50px 0;
+}
+.btn-catalogue
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 54px;
+    margin-top: 20px;
+    background-color: #27AE60;
+}
+.btn-catalogue span
+{
+    color: #FFFFFF;
+    font-weight: 500;
+    font-size: 18px;
+    margin-left: 15px;
+}
+
+/*#region Баннер с Сантой и инфой о компании*/
+.banner-boast
+{
+    display: flex;
+    height: 320px;
+    width: 100%;
+    background-color: #EAF8F0;
+}
+.boasts-container
+{
+    display: flex;
+    flex-direction: column;
+}
+/*#endregion Баннер с Сантой и инфой о компании*/
 
 /*#endregion Main*/
 
