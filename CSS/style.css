@@ -159,7 +159,16 @@ main
     height: 100%;
     padding: 140px 3.13% 560px 3.13%;
 }
-
+.arrow-right-round
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #FFFFFF;
+}
 /*#region Большие баннеры сверху*/
 .banners-container
 {
@@ -603,16 +612,6 @@ main
     color: #333333;
     width: 470px;
 }
-.arrow-right-round
-{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    background-color: #FFFFFF;
-}
 .boasts-container
 {
     display: flex;
@@ -659,6 +658,56 @@ main
     margin-top: 15px;
 }
 /*#endregion Баннер с Сантой и инфой о компании*/
+
+/*#region Баннеры вдохновения*/
+.banners-inspiration-container
+{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.banner-inspiration
+{
+    display: flex;
+    width: 890px;
+    height: 386px;
+    background-color: #E9E4FF;
+}
+.banner-inspiration:last-child
+{ background-color: #D2FFE5; }
+.banner-inspiration > img
+{
+    width: 60%;
+    height: auto;
+    height: auto\9;
+}
+.banner-inspiration-text-container
+{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 360px;
+    padding: 65px 30px 25px 30px;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+.banner-inspiration-text-container b
+{
+    font-weight: 500;
+    font-size: 24px;
+    color: #333333;
+    max-width: 185px;
+}
+.banner-inspiration-text-container span
+{
+    font-weight: 400;
+    font-size: 16px;
+    color: #333333;
+    width: 296px;
+}
+/*#endregion Баннеры вдохновения*/
 
 /*#endregion Main*/
 
@@ -713,8 +762,16 @@ footer
 {
     display: flex;
 }
+.navigation-container > *
+{
+    margin-right: 14%;
+}
 .footer-middle-list
-{ list-style: none; }
+{
+    list-style: none;
+    white-space: nowrap;
+    padding-top: 20px;
+}
 .footer-middle-list span
 {
     position: relative;
