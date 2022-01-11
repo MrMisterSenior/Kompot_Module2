@@ -36,6 +36,29 @@ body a { text-decoration: none;}
 {
     display: none;
 }
+.slider
+{
+    display: flex;
+    justify-content: space-between;
+    height: 4px;
+    width: 132px;
+    margin: 0 auto;
+    margin-top: 42px;
+}
+.slider-bar
+{
+    background-color: #E0E0DD;
+    width: 36px;
+    height: 4px;
+    border-radius: 100px;
+}
+.slider-bar-active
+{
+    background-color: #27AE60;
+    width: 36px;
+    height: 4px;
+    border-radius: 100px;
+}
 /*#region Шапка*/
 header
 {
@@ -157,7 +180,7 @@ header a, span
 main
 {
     height: 100%;
-    padding: 140px 3.13% 560px 3.13%;
+    padding: 140px 3.13% 0 3.13%;
 }
 .arrow-right-round
 {
@@ -709,6 +732,43 @@ main
 }
 /*#endregion Баннеры вдохновения*/
 
+/*#region Инстаграм*/
+.instagram-container
+{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: auto;
+    height: auto\9;
+}
+.instagram-item
+{
+    position: relative;
+    width: 20%;
+}
+.instagram-img
+{
+    width: 100%;
+    height: 100%;
+}
+.instagram-item-icon-video
+{
+    width: 7.4%;
+    height: 5.2%;
+    position: absolute;
+    top: 5.2%;
+    right: 5.2%;
+}
+.instagram-item-icon-gallery
+{
+    width: 6%;
+    height: 6%;
+    position: absolute;
+    top: 5.2%;
+    right: 5.2%;
+}
+/*#endregion Инстаграм*/
+
 /*#endregion Main*/
 
 /*#region Подвал*/
@@ -744,6 +804,7 @@ footer
 {
     font-size: 24px;
     font-weight: 500;
+    color: #FFFFFF;
 }
 /*#endregion Верх*/
 
