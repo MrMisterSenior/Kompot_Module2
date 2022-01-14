@@ -34,7 +34,7 @@ body
 body a { text-decoration: none;}
 .hidden
 {
-    display: none;
+    display: none !important;
 }
 .slider
 {
@@ -71,7 +71,6 @@ header
     z-index: 1;
     position: fixed;
     top: 0px;
-    height: 128px;
     width: 100%;
     border-bottom: 1px solid #E0E0DD;
 }
@@ -138,6 +137,11 @@ header a, span
 }
 
 /*#region Верхняя часть*/
+.burger-top-container
+{
+    display: flex;
+    justify-content: space-between;
+}
 .burger-navigation-container
 {
     display: flex;
@@ -150,7 +154,6 @@ header a, span
     margin-right: 100px;
     list-style: none;
     white-space: nowrap;
-    padding-top: 20px;
 }
 .burger-top-list img
 {
@@ -174,6 +177,38 @@ header a, span
     font-size: 16px;
     color: #333333;
 }
+.burger-info-container
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 165.5px;
+    height: 115px;
+}
+.burger-info-container span
+{
+    font-weight: 400;
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #9C9C9C;
+}
+.burger-social-media-buttons-container
+{
+    display: flex;
+    justify-content: space-between;
+    width: 165.5px;
+}
+.burger-social-media-buttons-container a
+{
+    width: 42px;
+    height: 42px;
+    margin: 0;
+    border: 1px solid #616161;
+}
+.burger-social-media-buttons-container a svg path
+{
+    fill: #616161;
+}
 /*#endregion Верхняя часть*/
 
 /*#region Баннер*/
@@ -193,6 +228,7 @@ header a, span
     flex-direction: column;
     align-items: flex-start;
     justify-content: space-between;
+    height: 143px;
 }
 .burger-partner-container span
 {
@@ -206,6 +242,7 @@ header a, span
     flex-direction: column;
     align-items: flex-start;
     justify-content: space-between;
+    height: 106px;
 }
 .burger-boast-container li
 {
@@ -226,7 +263,6 @@ header a, span
 /*#region Нижняя половина*/
 .header-bottom
 {
-    display: none;
     align-items: center;
     justify-content: space-between;
     padding-left: 60px;
@@ -275,15 +311,15 @@ header a, span
 }
 .header-bottom-right a
 {
-    margin-left: 28px;
+    margin-right: 28px;
 }
 .header-bottom-right a:hover svg path
 {
     stroke: #27AE60;
 }
-.header-bottom-right a:first-child
+.header-bottom-right a:last-child
 {
-    margin-left: 0px;
+    margin-right: 0px;
 }
 /*#endregion Нижняя половина*/
 
