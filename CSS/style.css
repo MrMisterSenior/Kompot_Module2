@@ -71,6 +71,8 @@ header
     z-index: 1;
     position: fixed;
     top: 0px;
+    height: 128px;
+    min-height: 128px;
     width: 100%;
     border-bottom: 1px solid #E0E0DD;
 }
@@ -263,6 +265,7 @@ header a, span
 /*#region Нижняя половина*/
 .header-bottom
 {
+    display: flex;
     align-items: center;
     justify-content: space-between;
     padding-left: 60px;
