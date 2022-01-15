@@ -39,9 +39,8 @@ body a { text-decoration: none;}
 .slider
 {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     height: 4px;
-    width: 132px;
     margin: 0 auto;
     margin-top: 42px;
 }
@@ -51,6 +50,7 @@ body a { text-decoration: none;}
     width: 36px;
     height: 4px;
     border-radius: 100px;
+    margin-right: 10px;
 }
 .slider-bar-active
 {
@@ -58,6 +58,11 @@ body a { text-decoration: none;}
     width: 36px;
     height: 4px;
     border-radius: 100px;
+    margin-right: 10px;
+}
+.slider-bar:last-child, .slider-bar-active:last-child
+{
+    margin-right: 0px;
 }
 svg path
 {
@@ -333,6 +338,10 @@ main
 {
     height: 100%;
     padding-top: 140px;
+}
+.catalogue-main
+{
+    padding: 140px 3.13%;
 }
 .wrapper
 {
@@ -937,6 +946,13 @@ main
     right: 5.2%;
 }
 /*#endregion Инстаграм*/
+
+/*#region Выпадающие списки сортировки*/
+.catalogue-select-container
+{
+    display: flex;
+}
+/*#endregion Выпадающие списки сортировки*/
 
 /*#endregion Main*/
 
