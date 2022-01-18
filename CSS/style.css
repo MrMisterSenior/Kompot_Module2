@@ -954,6 +954,29 @@ main
 }
 /*#endregion Выпадающие списки сортировки*/
 
+/*#region Фильтрованный каталог*/
+.catalogue-wrapper
+{
+    display: flex;
+    padding-bottom: 188px;
+    border-bottom: 1px solid #E0E0DD;
+}
+.filter
+{
+    display: flex;
+    flex-direction: column;
+    width: 360px;
+    padding: 0 30px;
+    border: 1px solid #E0E0DD;
+    margin-right: -1px;
+}
+.catalogue-products
+{
+    display: flex;
+    flex-direction: column;
+}
+/*#endregion Фильтрованный каталог*/
+
 /*#endregion Main*/
 
 /*#region Подвал*/
