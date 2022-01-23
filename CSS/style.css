@@ -1021,6 +1021,9 @@ main
 .height-range span::after{ content: " см"; }
 .checkbox-container-label
 {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
     color: #6F6F6F;
     font-weight: 400;
     font-size: 18px;
@@ -1035,6 +1038,44 @@ main
     color: #27AE60;
     font-weight: 400;
     font-size: 18px;
+    margin-left: 12px;
+}
+.checkbox-container-label input[type=checkbox]
+{
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+    position: relative;
+    visibility: hidden;
+    margin-right: 18px;
+}
+.checkbox-container-label input[type=checkbox]::after
+{
+    display: block;
+    content: "";
+    width: 24px;
+    height: 24px;
+    visibility: visible;
+    border: 1px solid #C2C2C2;
+    border-radius: 4px;
+}
+.checkbox-container-label input[type=checkbox]::before
+{
+    cursor: pointer;
+    visibility: hidden;
+    content: "";
+    position: absolute;
+    left: 9px;
+    top: 4px;
+    width: 5px;
+    height: 10px;
+    border: solid #219653;
+    border-width: 0 3px 3px 0;
+    transform: rotate(45deg);
+}
+.checkbox-container-label input[type=checkbox]:checked::before
+{
+    visibility: visible;
 }
 .filter-block input[type=submit]
 {
