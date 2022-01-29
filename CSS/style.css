@@ -295,6 +295,7 @@ header a, span
 }
 .header-bottom-left a
 {
+    position: relative;
     display: flex;
     align-items: center;
     height: 30px;
@@ -310,6 +311,26 @@ header a, span
     color: #333333;
     font-weight: 400;
     font-size: 18px;
+}
+.header-dropdown-wrapper
+{
+    position: absolute;
+    top: 0px;
+    padding-top: 45px;
+}
+.header-dropdown-container
+{
+    flex-direction: column;
+    background: #FFFFFF;
+    border: 1px solid #E0E0DD;
+    box-shadow: 0px 7px 20px rgba(0, 0, 0, 0.05);
+    border-radius: 6px;
+    padding: 28px 14px;
+    cursor: auto;
+}
+.header-bottom-left a:hover .header-dropdown-container
+{
+    display: flex;
 }
 .header-bottom-right
 {
@@ -1003,6 +1024,14 @@ main
     opacity: 0.9;
     margin-bottom: 31px;
 }
+.filter-block input[type=range]
+{
+    width: 100%;
+}
+.filter-block input[type=range]::-webkit-slider-thumb
+{
+    
+}
 .filter-range-text
 {
     display: flex;
@@ -1019,6 +1048,8 @@ main
 }
 .price-range span::after{ content: " ₽"; }
 .height-range span::after{ content: " см"; }
+
+/*#region Checkbox*/
 .checkbox-container-label
 {
     display: flex;
@@ -1077,6 +1108,12 @@ main
 {
     visibility: visible;
 }
+.checkbox-container-label input[type=checkbox]:checked::after
+{
+    background-color: #eaf5ef;
+}
+/*#endregion Checkbox*/
+
 .filter-block input[type=submit]
 {
     height: 44px;
