@@ -314,12 +314,14 @@ header a, span
 }
 .header-dropdown-wrapper
 {
+    display: none;
     position: absolute;
     top: 0px;
     padding-top: 45px;
 }
 .header-dropdown-container
 {
+    display: none;
     flex-direction: column;
     background: #FFFFFF;
     border: 1px solid #E0E0DD;
@@ -328,6 +330,7 @@ header a, span
     padding: 28px 14px;
     cursor: auto;
 }
+.header-bottom-left a:hover .header-dropdown-wrapper,
 .header-bottom-left a:hover .header-dropdown-container
 {
     display: flex;
